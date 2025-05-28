@@ -40,10 +40,6 @@ function getCookie(name) {
     }
     return ;
 }
-export function delJWTToken(){
-    jwtToken = null;
-    localStorage.setItem('jwt_token', null);
-}
 function init(){ // 로그인 폼에 쿠키에서 가져온 아이디 입력
     const emailInput = document.getElementById('typeEmailX');
     const idsave_check = document.getElementById('idSaveCheck');
