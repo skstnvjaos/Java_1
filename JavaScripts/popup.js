@@ -54,8 +54,8 @@ function show_clock(){
     setTimeout(show_clock, 1000);
 }
 function over(obj) {
-    obj.src="images/LOL_Main2.jpg";
+    obj.src="../images/LOL_Main2.jpg";
 }
 function out(obj) {
-    obj.src="images/LOL_Main.jpg";
+    obj.src="../images/LOL_Main.jpg";
 }
