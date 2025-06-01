@@ -2,7 +2,7 @@ import { session_set, session_set2, session_get, session_check, session_del} fro
 function logout() {
     session_del(); // 세션 삭제
     delJWTToken();
-    location.href = 'index.html';
+    location.href = '../index.html';
 }
 function delJWTToken(){
     //jwtToken = null;
