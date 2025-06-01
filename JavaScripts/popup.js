@@ -59,9 +59,9 @@ function show_clock(){
 }
 
 function over(obj) {
-    obj.src="../images/LOL_Main2.jpg";
+    obj.src="java-main/images/LOL_Main2.jpg";
 }
 
 function out(obj) {
-    obj.src="../images/LOL_Main.jpg";
+    obj.src="java-main/images/LOL_Main.jpg";
 }
