@@ -1,9 +1,10 @@
 function pop_up() {
     var cookieCheck = getCookie("popupYN");
     if (cookieCheck != "N"){
-        window.open("popup.html", "팝업테스트", "width=400, height=300, top=10, left=10");
+        window.open("../HTML/popup.html", "팝업테스트", "width=400, height=300, top=10, left=10");
     }
 }
+
 function setCookie(name, value, expiredays) {
     var date = new Date();
     date.setDate(date.getDate() + expiredays);
@@ -12,6 +13,7 @@ function setCookie(name, value, expiredays) {
     //보안
     document.cookie = escape(name) + "=" + escape(value) + "; expires=" + date.toUTCString() + ";path=/" + ";SameSite=None; Secure";
 }
+
 function getCookie(name) {
     var cookie = document.cookie;
     console.log("쿠키를 요청합니다.");
@@ -26,6 +28,7 @@ function getCookie(name) {
     }
     return ;
 }
+
 function closePopup() {
     if (document.getElementById('check_popup').value) {
         setCookie("popupYN", "N", 1);
@@ -33,6 +36,7 @@ function closePopup() {
         self.close();
     }
 }
+
 function show_clock(){
     let currentDate = new Date();
     let divClock = document.getElementById('divClock');
@@ -53,9 +57,11 @@ function show_clock(){
     }
     setTimeout(show_clock, 1000);
 }
+
 function over(obj) {
-    obj.src="images/LOL_Main2.jpg";
+    obj.src="../images/LOL_Main2.jpg";
 }
+
 function out(obj) {
-    obj.src="images/LOL_Main.jpg";
+    obj.src="../images/LOL_Main.jpg";
 }
